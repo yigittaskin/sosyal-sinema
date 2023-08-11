@@ -1,5 +1,5 @@
 # Sosyal Sinema 
-### Siteyi Canlı olarak incelemek için: [https://sosyal-sinema-app-react.vercel.app](https://sosyal-sinema-app-react.vercel.app)
+### Siteyi Canlı olarak incelemek için: https://sosyal-sinema.vercel.app
 
 SosyalSinema ile dilediğiniz filmin detaylarını öğrenebilir ve izlediğiniz filmler hakkında yorum yaparak tüm kullanıcılarla paylaşabilirsiniz.
 
