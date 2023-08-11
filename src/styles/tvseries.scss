@@ -1,0 +1,65 @@
+textarea {
+    width: 65%;
+}
+
+input {
+    width: 35%;
+}
+
+input,
+textarea {
+    background-color: #B7B7B7;
+    border: 1px solid #000000;
+    border-radius: 12px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+@media (max-width: 500px) {
+
+    textarea,
+    input {
+        width: 100%;
+    }
+}
+
+#dataName {
+    color: white;
+}
+
+#dataComment {
+    color: #848484;
+}
+
+.loader {
+    margin: 20px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 90px;
+    height: 90px;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

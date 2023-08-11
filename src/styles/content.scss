@@ -1,0 +1,35 @@
+.movieCard {
+    border-radius: 12px;
+    background: #101010;
+    color: white;
+    min-height: 300px;
+
+    img {
+        width: 100%;
+        transition: .3s;
+
+        &:hover {
+            cursor: pointer;
+            scale: 1.08;
+        }
+    }
+
+    h3 {
+        transition: .3s;
+
+        &:hover {
+            cursor: pointer;
+            scale: 1.08;
+        }
+    }
+}
+
+#movieTitle {
+    color: white;
+
+    &:hover {
+        scale: 1.02;
+        text-decoration: none;
+        text-decoration-line: none;
+    }
+}

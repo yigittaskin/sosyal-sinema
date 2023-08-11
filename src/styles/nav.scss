@@ -1,0 +1,49 @@
+#imgSinema {
+    max-width: 500px;
+}
+
+@media (max-width: 500px) {
+    #imgSinema {
+        max-width: 200px;
+    }
+}
+
+h1 {
+    font-size: 60px !important;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.navSection {
+    margin-top: 80px;
+
+    h4 {
+        font-style: normal;
+        font-weight: 400;
+        color: white !important;
+    }
+}
+
+.kategori {
+    background: #B7B7B7;
+    box-shadow: 10px 10px 5px rgba(255, 244, 244, 0.25);
+    border-radius: 12px;
+    margin-top: 30px;
+    width: 75%;
+    color: #101532;
+    padding: 10px;
+
+    .btn {
+        font-size: 20px;
+        transition: .3s;
+
+        &:hover {
+            scale: 1.1;
+        }
+    }
+
+    .activeTab {
+        background-color: #101532;
+        color: white;
+    }
+}
