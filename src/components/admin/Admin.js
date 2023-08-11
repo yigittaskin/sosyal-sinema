@@ -14,7 +14,7 @@ const Admin = () => {
 
     const handleLogin = async () => {
         try {
-            const response = await fetch('http://kodcat.com/backend-sosyal-sinema/adminLogin.php', {
+            const response = await fetch('https://kodcat.com/backend-sosyal-sinema/adminLogin.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded',

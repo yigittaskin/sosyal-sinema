@@ -17,7 +17,7 @@ function DiziEkle() {
     event.preventDefault();
 
     // Form verilerini sunucuya gönderelim
-    fetch('http://kodcat.com/backend-sosyal-sinema/diziEkle.php', {
+    fetch('https://kodcat.com/backend-sosyal-sinema/diziEkle.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',

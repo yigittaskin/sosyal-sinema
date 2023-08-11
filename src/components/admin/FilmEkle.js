@@ -16,7 +16,7 @@ function FilmEkle() {
     event.preventDefault();
 
     // Form verilerini sunucuya gönderelim
-    fetch('http://kodcat.com/backend-sosyal-sinema/filmEkle.php', {
+    fetch('https://kodcat.com/backend-sosyal-sinema/filmEkle.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',

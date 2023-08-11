@@ -9,7 +9,7 @@ const FilmYorumSil = () => {
 
   const fetchComments = () => {
     // Yorumları API'den çekin
-    fetch('http://kodcat.com/backend-sosyal-sinema/filmTumYorumlar.php')
+    fetch('https://kodcat.com/backend-sosyal-sinema/filmTumYorumlar.php')
       .then((response) => response.json())
       .then((data) => {
         setComments(data);
@@ -18,7 +18,7 @@ const FilmYorumSil = () => {
   };
 
   const deleteComment = (commentId) => {
-    fetch(`http://kodcat.com/backend-sosyal-sinema/filmYorumSil.php`, {
+    fetch(`https://kodcat.com/backend-sosyal-sinema/filmYorumSil.php`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',

@@ -9,7 +9,7 @@ const DiziSil = () => {
 
     const fetchDizi = () => {
         // Yorumları API'den çekin
-        fetch('http://kodcat.com/backend-sosyal-sinema/diziler.php')
+        fetch('https://kodcat.com/backend-sosyal-sinema/diziler.php')
             .then((response) => response.json())
             .then((data) => {
                 setDizi(data);
@@ -18,7 +18,7 @@ const DiziSil = () => {
     };
 
     const deleteDizi = (commentId) => {
-        fetch(`http://kodcat.com/backend-sosyal-sinema/diziSil.php`, {
+        fetch(`https://kodcat.com/backend-sosyal-sinema/diziSil.php`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',

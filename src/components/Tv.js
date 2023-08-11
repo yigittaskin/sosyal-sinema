@@ -7,7 +7,7 @@ const Tv = () => {
     const [movies, setMovies] = useState(null);
 
     useEffect(() => {
-        fetch('http://kodcat.com/backend-sosyal-sinema/diziler.php')
+        fetch('https://kodcat.com/backend-sosyal-sinema/diziler.php')
             .then((response) => response.json())
             .then((data) => setMovies(data))
             .catch((error) => console.error('API Hatası:', error));

@@ -9,7 +9,7 @@ const DiziYorumSil = () => {
 
   const fetchComments = () => {
     // Yorumları API'den çekin
-    fetch('http://kodcat.com/backend-sosyal-sinema/diziTumYorumlar.php')
+    fetch('https://kodcat.com/backend-sosyal-sinema/diziTumYorumlar.php')
       .then((response) => response.json())
       .then((data) => {
         setComments(data);
@@ -18,7 +18,7 @@ const DiziYorumSil = () => {
   };
 
   const deleteComment = (commentId) => {
-    fetch(`http://kodcat.com/backend-sosyal-sinema/diziYorumSil.php`, {
+    fetch(`https://kodcat.com/backend-sosyal-sinema/diziYorumSil.php`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',

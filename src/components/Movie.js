@@ -11,7 +11,7 @@ const Movie = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`http://kodcat.com/backend-sosyal-sinema/filmById.php?id=${id}`)
+    fetch(`https://kodcat.com/backend-sosyal-sinema/filmById.php?id=${id}`)
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
@@ -23,7 +23,7 @@ const Movie = () => {
 
   const fetchComments = () => {
     // Yorumları API'den çekin
-    fetch(`http://kodcat.com/backend-sosyal-sinema/filmYorumlar.php?id=${id}`)
+    fetch(`https://kodcat.com/backend-sosyal-sinema/filmYorumlar.php?id=${id}`)
       .then((response) => response.json())
       .then((data) => {
         setYorumlar(data);
@@ -34,7 +34,7 @@ const Movie = () => {
 
   const addComment = () => {
     // Yorum göndermek için API isteği yapın
-    fetch(`http://kodcat.com/backend-sosyal-sinema/filmYorumEkle.php?id=${id}`, {
+    fetch(`https://kodcat.com/backend-sosyal-sinema/filmYorumEkle.php?id=${id}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',

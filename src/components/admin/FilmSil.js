@@ -9,7 +9,7 @@ const FilmSil = () => {
 
     const fetchFilm = () => {
         // Yorumları API'den çekin
-        fetch('http://kodcat.com/backend-sosyal-sinema/filmler.php')
+        fetch('https://kodcat.com/backend-sosyal-sinema/filmler.php')
             .then((response) => response.json())
             .then((data) => {
                 setFilm(data);
@@ -18,7 +18,7 @@ const FilmSil = () => {
     };
 
     const deleteFilm = (commentId) => {
-        fetch(`http://kodcat.com/backend-sosyal-sinema/filmSil.php`, {
+        fetch(`https://kodcat.com/backend-sosyal-sinema/filmSil.php`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',

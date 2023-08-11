@@ -10,11 +10,11 @@ const Content = (props) => {
 
 
   useEffect(() => {
-    fetch('http://kodcat.com/backend-sosyal-sinema/sonFilmler.php')
+    fetch('https://kodcat.com/backend-sosyal-sinema/sonFilmler.php')
       .then((response) => response.json())
       .then((data) => setMovies(data))
       .catch((error) => console.error('API Hatası:', error));
-    fetch('http://kodcat.com/backend-sosyal-sinema/sonDiziler.php')
+    fetch('https://kodcat.com/backend-sosyal-sinema/sonDiziler.php')
       .then((response) => response.json())
       .then((data) => setDiziler(data))
       .catch((error) => console.error('API Hatası:', error));
